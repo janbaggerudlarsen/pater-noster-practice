@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pater Noster Practice</title>
+<meta name="description" content="Learn the Our Father in Latin, one line at a time. Works offline.">
+<meta name="theme-color" content="#1f4e8c">
+<meta name="referrer" content="no-referrer">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Pater Noster">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <img class="logo" src="icons/icon-192.png" alt="" width="40" height="40">
+  <div class="title">
+    <h1>Pater Noster</h1>
+    <p class="sub">The Our Father in Latin, line by line</p>
+  </div>
+  <span id="offlinePill" class="pill" hidden></span>
+</header>
+
+<div class="speedbar" role="group" aria-label="Speed">
+  <span class="speed-label">Speed</span>
+  <div class="seg" id="speedSeg">
+    <button type="button" data-speed="normal">Normal</button>
+    <button type="button" data-speed="slow">Slow</button>
+  </div>
+</div>
+
+<main>
+  <!-- 1. Sentences + loop -->
+  <section id="tab-pray" class="tab" aria-labelledby="t-pray">
+    <div id="installCard" class="card install" hidden>
+      <p><strong>Keep it on your home screen.</strong> <span id="installText"></span></p>
+      <div class="row">
+        <button type="button" id="installBtn" class="btn primary" hidden>Install app</button>
+        <button type="button" id="installDismiss" class="btn ghost">Not now</button>
+      </div>
+    </div>
+    <p class="intro">Tap a line to hear it. Tap <span aria-hidden="true">↻</span> to repeat it until you stop.</p>
+    <ol class="lines" id="prayList"></ol>
+
+    <div class="card">
+      <h2>Loop a range</h2>
+      <div class="range">
+        <label>From <select id="loopFrom"></select></label>
+        <label>to <select id="loopTo"></select></label>
+      </div>
+      <p class="label">Pause between repeats</p>
+      <div class="chips" id="loopGapChips" data-target="loopGap">
+        <button type="button" data-v="1000">1 s</button>
+        <button type="button" data-v="3000">3 s</button>
+        <button type="button" data-v="6000">6 s</button>
+        <button type="button" data-v="same">Time to repeat</button>
+      </div>
+      <div class="row">
+        <button type="button" id="loopStart" class="btn primary">↻ Start loop</button>
+        <button type="button" id="playAll" class="btn">▶ Whole prayer once</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Build-up -->
+  <section id="tab-build" class="tab" aria-labelledby="t-build" hidden>
+    <p class="intro">Learn it in layers: line 1, then 1–2, then 1–3, until you can pray all six.</p>
+    <div class="card">
+      <div class="steps" id="steps" role="group" aria-label="Build-up steps"></div>
+      <h2 id="stepTitle"></h2>
+      <ol class="build-text" id="buildText"></ol>
+      <div class="row controls">
+        <button type="button" id="buildBack" class="btn" aria-label="Previous step">◀ Back</button>
+        <button type="button" id="buildPlay" class="btn primary">▶ Play step</button>
+        <button type="button" id="buildNext" class="btn">Next step ▶</button>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="buildAuto">
+        <span class="track" aria-hidden="true"></span>
+        <span>Auto-advance through the steps</span>
+      </label>
+      <p class="label">Pause for you to repeat</p>
+      <div class="chips" id="buildGapChips" data-target="buildGap">
+        <button type="button" data-v="3000">3 s</button>
+        <button type="button" data-v="6000">6 s</button>
+        <button type="button" data-v="10000">10 s</button>
+        <button type="button" data-v="same">Time to repeat</button>
+      </div>
+      <p class="hint">“Time to repeat” pauses about as long as the step itself took.</p>
+    </div>
+    <div class="card progress">
+      <p id="buildProgress"></p>
+      <button type="button" id="buildReset" class="btn ghost small">Start over</button>
+    </div>
+  </section>
+
+  <!-- 3. Memory -->
+  <section id="tab-memory" class="tab" aria-labelledby="t-memory" hidden>
+    <div class="seg wide" id="memSeg" role="group" aria-label="What to show">
+      <button type="button" data-mode="full">Full text</button>
+      <button type="button" data-mode="letters">First letters</button>
+      <button type="button" data-mode="hidden">Hidden</button>
+    </div>
+    <p class="intro">Say each line from memory, then tap a word to peek, or Reveal to check the whole line.</p>
+    <ol class="mem-list" id="memList"></ol>
+    <div class="card progress">
+      <p id="knownCount"></p>
+      <button type="button" id="memHideAll" class="btn ghost small">Hide all again</button>
+    </div>
+  </section>
+
+  <!-- 4. Tutorial -->
+  <section id="tab-tutorial" class="tab" aria-labelledby="t-tutorial" hidden>
+    <div class="card">
+      <h2>Full tutorial</h2>
+      <p class="muted">Cor Fidelis · 3 min 45 s</p>
+      <audio id="tutAudio" class="native" controls preload="none" src="audio/tutorial.mp3"></audio>
+      <p class="label">Jump to</p>
+      <div class="chips" id="chapters">
+        <button type="button" data-t="0">Start · 0:00</button>
+        <button type="button" data-t="25">Whole prayer · 0:25</button>
+        <button type="button" data-t="61">Repeat after me · 1:01</button>
+        <button type="button" data-t="170">Ending · 2:50</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Slow loop, lines 1–2</h2>
+      <p class="muted">Slow line 1 then line 2, ten times through · 3 min 24 s</p>
+      <audio id="slowLoopAudio" class="native" controls preload="none" src="audio/slow-loop-1-2.mp3"></audio>
+    </div>
+    <div class="card about">
+      <h2>About</h2>
+      <p>Audio and Latin text from <a href="https://youtu.be/vrWrFdjPp5g" rel="noopener noreferrer" target="_blank">“How to Pray the Our Father in Latin: Pater Noster Tutorial”</a> by Cor Fidelis. The Latin is written exactly as it appears on screen in the video.</p>
+      <p id="offlineStatus" class="muted"></p>
+      <p class="muted">No accounts and no tracking. Your progress stays on this phone.</p>
+    </div>
+  </section>
+</main>
+
+<div id="player" class="player" hidden aria-live="polite">
+  <div class="player-info">
+    <span id="playerLabel" class="player-label"></span>
+    <span id="playerState" class="player-state"></span>
+  </div>
+  <button type="button" id="playerPause" class="btn round" aria-label="Pause">❚❚</button>
+  <button type="button" id="playerStop" class="btn round" aria-label="Stop">■</button>
+</div>
+
+<nav class="tabs" role="tablist">
+  <button type="button" role="tab" id="t-pray" data-tab="pray"><span class="ico" aria-hidden="true">☰</span>Lines</button>
+  <button type="button" role="tab" id="t-build" data-tab="build"><span class="ico" aria-hidden="true">▤</span>Build up</button>
+  <button type="button" role="tab" id="t-memory" data-tab="memory"><span class="ico" aria-hidden="true">✎</span>Memory</button>
+  <button type="button" role="tab" id="t-tutorial" data-tab="tutorial"><span class="ico" aria-hidden="true">♪</span>Tutorial</button>
+</nav>
+
+<script src="assets.js"></script>
+<script src="sentences.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
