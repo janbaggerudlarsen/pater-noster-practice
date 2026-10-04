@@ -36,6 +36,8 @@ a { color: var(--blue); }
 .title { flex: 1; min-width: 0; }
 h1 { margin: 0; font: 600 1.45rem/1.1 var(--latin); color: var(--blue); letter-spacing: .01em; }
 .sub { margin: 2px 0 0; font-size: .85rem; color: var(--muted); }
+.credit { margin: 1px 0 0; font-size: .75rem; color: var(--muted); }
+.credit a { color: var(--blue-2); font-weight: 600; text-decoration: none; }
 .pill { font-size: .75rem; padding: 4px 10px; border-radius: 999px; background: var(--sky); color: var(--blue); white-space: nowrap; }
 .pill.ok { background: #e3f3e8; color: #24663d; }
 
