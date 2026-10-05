@@ -28,12 +28,16 @@
   <span id="offlinePill" class="pill" hidden></span>
 </header>
 
-<div class="speedbar" role="group" aria-label="Speed">
+<div class="speedbar" role="group" aria-label="Speed and translation">
   <span class="speed-label">Speed</span>
   <div class="seg" id="speedSeg">
     <button type="button" data-speed="normal">Normal</button>
     <button type="button" data-speed="slow">Slow</button>
   </div>
+  <label class="eng-toggle" title="Show English under each Latin line">
+    <input type="checkbox" id="showEnglish" checked>
+    <span>English</span>
+  </label>
 </div>
 
 <main>
@@ -129,6 +133,8 @@
         <button type="button" data-t="61">Repeat after me · 1:01</button>
         <button type="button" data-t="170">Ending · 2:50</button>
       </div>
+      <ol class="tut-text" id="tutText" aria-label="Prayer text for the whole-prayer section"></ol>
+      <p class="hint">Word highlight follows the audio during “Whole prayer” (about 0:25–1:01).</p>
     </div>
     <div class="card">
       <h2>Slow loop, lines 1–2</h2>

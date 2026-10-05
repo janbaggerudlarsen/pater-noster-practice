@@ -1,0 +1,2098 @@
+{
+  "normal": {
+    "s1": {
+      "duration": 6.25,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.58,
+          "word": "Pater"
+        },
+        {
+          "start": 0.58,
+          "end": 1.38,
+          "word": "noster,"
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "word": "qui"
+        },
+        {
+          "start": 1.82,
+          "end": 2.16,
+          "word": "es"
+        },
+        {
+          "start": 2.16,
+          "end": 2.42,
+          "word": "in"
+        },
+        {
+          "start": 2.42,
+          "end": 3.2,
+          "word": "cælis,"
+        },
+        {
+          "start": 3.2,
+          "end": 4.86,
+          "word": "sanctificétur"
+        },
+        {
+          "start": 4.86,
+          "end": 5.3,
+          "word": "Nomen"
+        },
+        {
+          "start": 5.3,
+          "end": 6.25,
+          "word": "Tuum."
+        }
+      ]
+    },
+    "s2": {
+      "duration": 2.35,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.86,
+          "word": "Advéniat"
+        },
+        {
+          "start": 0.86,
+          "end": 1.5,
+          "word": "Regnum"
+        },
+        {
+          "start": 1.5,
+          "end": 2.35,
+          "word": "Tuum."
+        }
+      ]
+    },
+    "s3": {
+      "duration": 5.05,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.46,
+          "word": "Fiat"
+        },
+        {
+          "start": 0.46,
+          "end": 1.3,
+          "word": "Volúntas"
+        },
+        {
+          "start": 1.3,
+          "end": 1.76,
+          "word": "Tua,"
+        },
+        {
+          "start": 1.76,
+          "end": 2.64,
+          "word": "sicut"
+        },
+        {
+          "start": 2.64,
+          "end": 2.92,
+          "word": "in"
+        },
+        {
+          "start": 2.92,
+          "end": 3.44,
+          "word": "cælo"
+        },
+        {
+          "start": 3.44,
+          "end": 3.82,
+          "word": "et"
+        },
+        {
+          "start": 3.82,
+          "end": 4.14,
+          "word": "in"
+        },
+        {
+          "start": 4.14,
+          "end": 5.05,
+          "word": "terra."
+        }
+      ]
+    },
+    "s4": {
+      "duration": 11.55,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.62,
+          "word": "Panem"
+        },
+        {
+          "start": 0.62,
+          "end": 1.18,
+          "word": "nostrum"
+        },
+        {
+          "start": 1.18,
+          "end": 2.3,
+          "word": "quotidiánum"
+        },
+        {
+          "start": 2.3,
+          "end": 2.58,
+          "word": "da"
+        },
+        {
+          "start": 2.58,
+          "end": 3.22,
+          "word": "nobis"
+        },
+        {
+          "start": 3.22,
+          "end": 3.54,
+          "word": "hódie,"
+        },
+        {
+          "start": 3.54,
+          "end": 4.48,
+          "word": "et"
+        },
+        {
+          "start": 4.48,
+          "end": 5.1,
+          "word": "dimítte"
+        },
+        {
+          "start": 5.1,
+          "end": 5.72,
+          "word": "nobis"
+        },
+        {
+          "start": 5.72,
+          "end": 6.22,
+          "word": "débita"
+        },
+        {
+          "start": 6.22,
+          "end": 6.7,
+          "word": "nostra"
+        },
+        {
+          "start": 6.7,
+          "end": 7.9,
+          "word": "sicut"
+        },
+        {
+          "start": 7.9,
+          "end": 8.12,
+          "word": "et"
+        },
+        {
+          "start": 8.12,
+          "end": 8.34,
+          "word": "nos"
+        },
+        {
+          "start": 8.34,
+          "end": 9.44,
+          "word": "dimíttimus"
+        },
+        {
+          "start": 9.44,
+          "end": 10.46,
+          "word": "debitóribus"
+        },
+        {
+          "start": 10.46,
+          "end": 11.55,
+          "word": "nostris."
+        }
+      ]
+    },
+    "s5": {
+      "duration": 5.5,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.42,
+          "word": "Et"
+        },
+        {
+          "start": 0.42,
+          "end": 0.66,
+          "word": "ne"
+        },
+        {
+          "start": 0.66,
+          "end": 0.94,
+          "word": "nos"
+        },
+        {
+          "start": 0.94,
+          "end": 1.64,
+          "word": "indúcas"
+        },
+        {
+          "start": 1.64,
+          "end": 2.06,
+          "word": "in"
+        },
+        {
+          "start": 2.06,
+          "end": 3.24,
+          "word": "tentatiónem,"
+        },
+        {
+          "start": 3.24,
+          "end": 3.74,
+          "word": "sed"
+        },
+        {
+          "start": 3.74,
+          "end": 4.4,
+          "word": "líbera"
+        },
+        {
+          "start": 4.4,
+          "end": 4.62,
+          "word": "nos"
+        },
+        {
+          "start": 4.62,
+          "end": 4.84,
+          "word": "a"
+        },
+        {
+          "start": 4.84,
+          "end": 5.5,
+          "word": "malo."
+        }
+      ]
+    },
+    "s6": {
+      "duration": 0.95,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.95,
+          "word": "Amen."
+        }
+      ]
+    }
+  },
+  "slow": {
+    "s1": {
+      "duration": 16.75,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.82,
+          "word": "Pater"
+        },
+        {
+          "start": 0.82,
+          "end": 2.62,
+          "word": "noster,"
+        },
+        {
+          "start": 2.62,
+          "end": 5.9,
+          "word": "qui"
+        },
+        {
+          "start": 5.9,
+          "end": 6.5,
+          "word": "es"
+        },
+        {
+          "start": 6.5,
+          "end": 6.9,
+          "word": "in"
+        },
+        {
+          "start": 6.9,
+          "end": 8.2,
+          "word": "cælis,"
+        },
+        {
+          "start": 8.2,
+          "end": 14.04,
+          "word": "sanctificétur"
+        },
+        {
+          "start": 14.04,
+          "end": 15.1,
+          "word": "Nomen"
+        },
+        {
+          "start": 15.1,
+          "end": 16.75,
+          "word": "Tuum."
+        }
+      ]
+    },
+    "s2": {
+      "duration": 3.65,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 1.44,
+          "word": "Advéniat"
+        },
+        {
+          "start": 1.44,
+          "end": 2.44,
+          "word": "Regnum"
+        },
+        {
+          "start": 2.44,
+          "end": 3.65,
+          "word": "Tuum."
+        }
+      ]
+    },
+    "s3": {
+      "duration": 11.45,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.9,
+          "word": "Fiat"
+        },
+        {
+          "start": 0.9,
+          "end": 2.28,
+          "word": "Volúntas"
+        },
+        {
+          "start": 2.28,
+          "end": 3.04,
+          "word": "Tua,"
+        },
+        {
+          "start": 3.04,
+          "end": 7.82,
+          "word": "sicut"
+        },
+        {
+          "start": 7.82,
+          "end": 8.22,
+          "word": "in"
+        },
+        {
+          "start": 8.22,
+          "end": 8.84,
+          "word": "cælo"
+        },
+        {
+          "start": 8.84,
+          "end": 9.86,
+          "word": "et"
+        },
+        {
+          "start": 9.86,
+          "end": 10.22,
+          "word": "in"
+        },
+        {
+          "start": 10.22,
+          "end": 11.45,
+          "word": "terra."
+        }
+      ]
+    },
+    "s4": {
+      "duration": 36.651,
+      "words": [
+        {
+          "start": 0.28,
+          "end": 1.262,
+          "word": "Panem"
+        },
+        {
+          "start": 1.262,
+          "end": 2.243,
+          "word": "nostrum"
+        },
+        {
+          "start": 2.243,
+          "end": 9.74,
+          "word": "quotidiánum"
+        },
+        {
+          "start": 9.74,
+          "end": 10.362,
+          "word": "da"
+        },
+        {
+          "start": 10.362,
+          "end": 10.983,
+          "word": "nobis"
+        },
+        {
+          "start": 10.983,
+          "end": 16.75,
+          "word": "hódie,"
+        },
+        {
+          "start": 16.75,
+          "end": 17.539,
+          "word": "et"
+        },
+        {
+          "start": 17.539,
+          "end": 18.328,
+          "word": "dimítte"
+        },
+        {
+          "start": 18.328,
+          "end": 19.117,
+          "word": "nobis"
+        },
+        {
+          "start": 19.117,
+          "end": 19.906,
+          "word": "débita"
+        },
+        {
+          "start": 19.906,
+          "end": 26.32,
+          "word": "nostra"
+        },
+        {
+          "start": 26.32,
+          "end": 27.026,
+          "word": "sicut"
+        },
+        {
+          "start": 27.026,
+          "end": 27.733,
+          "word": "et"
+        },
+        {
+          "start": 27.733,
+          "end": 28.439,
+          "word": "nos"
+        },
+        {
+          "start": 28.439,
+          "end": 33.76,
+          "word": "dimíttimus"
+        },
+        {
+          "start": 33.76,
+          "end": 35.043,
+          "word": "debitóribus"
+        },
+        {
+          "start": 35.043,
+          "end": 36.651,
+          "word": "nostris."
+        }
+      ]
+    },
+    "s5": {
+      "duration": 17.75,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.48,
+          "word": "Et"
+        },
+        {
+          "start": 0.48,
+          "end": 0.94,
+          "word": "ne"
+        },
+        {
+          "start": 0.94,
+          "end": 1.46,
+          "word": "nos"
+        },
+        {
+          "start": 1.46,
+          "end": 2.56,
+          "word": "indúcas"
+        },
+        {
+          "start": 2.56,
+          "end": 6.98,
+          "word": "in"
+        },
+        {
+          "start": 6.98,
+          "end": 9.14,
+          "word": "tentatiónem,"
+        },
+        {
+          "start": 9.14,
+          "end": 14.64,
+          "word": "sed"
+        },
+        {
+          "start": 14.64,
+          "end": 15.7,
+          "word": "líbera"
+        },
+        {
+          "start": 15.7,
+          "end": 16.16,
+          "word": "nos"
+        },
+        {
+          "start": 16.16,
+          "end": 16.5,
+          "word": "a"
+        },
+        {
+          "start": 16.5,
+          "end": 17.75,
+          "word": "malo."
+        }
+      ]
+    },
+    "s6": {
+      "duration": 1.05,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 1.05,
+          "word": "Amen."
+        }
+      ]
+    }
+  },
+  "buildup": {
+    "1-1": {
+      "duration": 6.288,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.58,
+          "word": "Pater",
+          "line": 0
+        },
+        {
+          "start": 0.58,
+          "end": 1.38,
+          "word": "noster,",
+          "line": 0
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "word": "qui",
+          "line": 0
+        },
+        {
+          "start": 1.82,
+          "end": 2.16,
+          "word": "es",
+          "line": 0
+        },
+        {
+          "start": 2.16,
+          "end": 2.42,
+          "word": "in",
+          "line": 0
+        },
+        {
+          "start": 2.42,
+          "end": 3.2,
+          "word": "cælis,",
+          "line": 0
+        },
+        {
+          "start": 3.2,
+          "end": 4.86,
+          "word": "sanctificétur",
+          "line": 0
+        },
+        {
+          "start": 4.86,
+          "end": 5.3,
+          "word": "Nomen",
+          "line": 0
+        },
+        {
+          "start": 5.3,
+          "end": 6.25,
+          "word": "Tuum.",
+          "line": 0
+        }
+      ],
+      "lines": [
+        {
+          "line": 0,
+          "start": 0.0,
+          "end": 6.288
+        }
+      ]
+    },
+    "1-2": {
+      "duration": 8.664,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.58,
+          "word": "Pater",
+          "line": 0
+        },
+        {
+          "start": 0.58,
+          "end": 1.38,
+          "word": "noster,",
+          "line": 0
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "word": "qui",
+          "line": 0
+        },
+        {
+          "start": 1.82,
+          "end": 2.16,
+          "word": "es",
+          "line": 0
+        },
+        {
+          "start": 2.16,
+          "end": 2.42,
+          "word": "in",
+          "line": 0
+        },
+        {
+          "start": 2.42,
+          "end": 3.2,
+          "word": "cælis,",
+          "line": 0
+        },
+        {
+          "start": 3.2,
+          "end": 4.86,
+          "word": "sanctificétur",
+          "line": 0
+        },
+        {
+          "start": 4.86,
+          "end": 5.3,
+          "word": "Nomen",
+          "line": 0
+        },
+        {
+          "start": 5.3,
+          "end": 6.25,
+          "word": "Tuum.",
+          "line": 0
+        },
+        {
+          "start": 6.288,
+          "end": 7.148,
+          "word": "Advéniat",
+          "line": 1
+        },
+        {
+          "start": 7.148,
+          "end": 7.788,
+          "word": "Regnum",
+          "line": 1
+        },
+        {
+          "start": 7.788,
+          "end": 8.638,
+          "word": "Tuum.",
+          "line": 1
+        }
+      ],
+      "lines": [
+        {
+          "line": 0,
+          "start": 0.0,
+          "end": 6.288
+        },
+        {
+          "line": 1,
+          "start": 6.288,
+          "end": 8.664
+        }
+      ]
+    },
+    "1-3": {
+      "duration": 13.752,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.58,
+          "word": "Pater",
+          "line": 0
+        },
+        {
+          "start": 0.58,
+          "end": 1.38,
+          "word": "noster,",
+          "line": 0
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "word": "qui",
+          "line": 0
+        },
+        {
+          "start": 1.82,
+          "end": 2.16,
+          "word": "es",
+          "line": 0
+        },
+        {
+          "start": 2.16,
+          "end": 2.42,
+          "word": "in",
+          "line": 0
+        },
+        {
+          "start": 2.42,
+          "end": 3.2,
+          "word": "cælis,",
+          "line": 0
+        },
+        {
+          "start": 3.2,
+          "end": 4.86,
+          "word": "sanctificétur",
+          "line": 0
+        },
+        {
+          "start": 4.86,
+          "end": 5.3,
+          "word": "Nomen",
+          "line": 0
+        },
+        {
+          "start": 5.3,
+          "end": 6.25,
+          "word": "Tuum.",
+          "line": 0
+        },
+        {
+          "start": 6.288,
+          "end": 7.148,
+          "word": "Advéniat",
+          "line": 1
+        },
+        {
+          "start": 7.148,
+          "end": 7.788,
+          "word": "Regnum",
+          "line": 1
+        },
+        {
+          "start": 7.788,
+          "end": 8.638,
+          "word": "Tuum.",
+          "line": 1
+        },
+        {
+          "start": 8.664,
+          "end": 9.124,
+          "word": "Fiat",
+          "line": 2
+        },
+        {
+          "start": 9.124,
+          "end": 9.964,
+          "word": "Volúntas",
+          "line": 2
+        },
+        {
+          "start": 9.964,
+          "end": 10.424,
+          "word": "Tua,",
+          "line": 2
+        },
+        {
+          "start": 10.424,
+          "end": 11.304,
+          "word": "sicut",
+          "line": 2
+        },
+        {
+          "start": 11.304,
+          "end": 11.584,
+          "word": "in",
+          "line": 2
+        },
+        {
+          "start": 11.584,
+          "end": 12.104,
+          "word": "cælo",
+          "line": 2
+        },
+        {
+          "start": 12.104,
+          "end": 12.484,
+          "word": "et",
+          "line": 2
+        },
+        {
+          "start": 12.484,
+          "end": 12.804,
+          "word": "in",
+          "line": 2
+        },
+        {
+          "start": 12.804,
+          "end": 13.714,
+          "word": "terra.",
+          "line": 2
+        }
+      ],
+      "lines": [
+        {
+          "line": 0,
+          "start": 0.0,
+          "end": 6.288
+        },
+        {
+          "line": 1,
+          "start": 6.288,
+          "end": 8.664
+        },
+        {
+          "line": 2,
+          "start": 8.664,
+          "end": 13.752
+        }
+      ]
+    },
+    "1-4": {
+      "duration": 25.344,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.58,
+          "word": "Pater",
+          "line": 0
+        },
+        {
+          "start": 0.58,
+          "end": 1.38,
+          "word": "noster,",
+          "line": 0
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "word": "qui",
+          "line": 0
+        },
+        {
+          "start": 1.82,
+          "end": 2.16,
+          "word": "es",
+          "line": 0
+        },
+        {
+          "start": 2.16,
+          "end": 2.42,
+          "word": "in",
+          "line": 0
+        },
+        {
+          "start": 2.42,
+          "end": 3.2,
+          "word": "cælis,",
+          "line": 0
+        },
+        {
+          "start": 3.2,
+          "end": 4.86,
+          "word": "sanctificétur",
+          "line": 0
+        },
+        {
+          "start": 4.86,
+          "end": 5.3,
+          "word": "Nomen",
+          "line": 0
+        },
+        {
+          "start": 5.3,
+          "end": 6.25,
+          "word": "Tuum.",
+          "line": 0
+        },
+        {
+          "start": 6.288,
+          "end": 7.148,
+          "word": "Advéniat",
+          "line": 1
+        },
+        {
+          "start": 7.148,
+          "end": 7.788,
+          "word": "Regnum",
+          "line": 1
+        },
+        {
+          "start": 7.788,
+          "end": 8.638,
+          "word": "Tuum.",
+          "line": 1
+        },
+        {
+          "start": 8.664,
+          "end": 9.124,
+          "word": "Fiat",
+          "line": 2
+        },
+        {
+          "start": 9.124,
+          "end": 9.964,
+          "word": "Volúntas",
+          "line": 2
+        },
+        {
+          "start": 9.964,
+          "end": 10.424,
+          "word": "Tua,",
+          "line": 2
+        },
+        {
+          "start": 10.424,
+          "end": 11.304,
+          "word": "sicut",
+          "line": 2
+        },
+        {
+          "start": 11.304,
+          "end": 11.584,
+          "word": "in",
+          "line": 2
+        },
+        {
+          "start": 11.584,
+          "end": 12.104,
+          "word": "cælo",
+          "line": 2
+        },
+        {
+          "start": 12.104,
+          "end": 12.484,
+          "word": "et",
+          "line": 2
+        },
+        {
+          "start": 12.484,
+          "end": 12.804,
+          "word": "in",
+          "line": 2
+        },
+        {
+          "start": 12.804,
+          "end": 13.714,
+          "word": "terra.",
+          "line": 2
+        },
+        {
+          "start": 13.752,
+          "end": 14.372,
+          "word": "Panem",
+          "line": 3
+        },
+        {
+          "start": 14.372,
+          "end": 14.932,
+          "word": "nostrum",
+          "line": 3
+        },
+        {
+          "start": 14.932,
+          "end": 16.052,
+          "word": "quotidiánum",
+          "line": 3
+        },
+        {
+          "start": 16.052,
+          "end": 16.332,
+          "word": "da",
+          "line": 3
+        },
+        {
+          "start": 16.332,
+          "end": 16.972,
+          "word": "nobis",
+          "line": 3
+        },
+        {
+          "start": 16.972,
+          "end": 17.292,
+          "word": "hódie,",
+          "line": 3
+        },
+        {
+          "start": 17.292,
+          "end": 18.232,
+          "word": "et",
+          "line": 3
+        },
+        {
+          "start": 18.232,
+          "end": 18.852,
+          "word": "dimítte",
+          "line": 3
+        },
+        {
+          "start": 18.852,
+          "end": 19.472,
+          "word": "nobis",
+          "line": 3
+        },
+        {
+          "start": 19.472,
+          "end": 19.972,
+          "word": "débita",
+          "line": 3
+        },
+        {
+          "start": 19.972,
+          "end": 20.452,
+          "word": "nostra",
+          "line": 3
+        },
+        {
+          "start": 20.452,
+          "end": 21.652,
+          "word": "sicut",
+          "line": 3
+        },
+        {
+          "start": 21.652,
+          "end": 21.872,
+          "word": "et",
+          "line": 3
+        },
+        {
+          "start": 21.872,
+          "end": 22.092,
+          "word": "nos",
+          "line": 3
+        },
+        {
+          "start": 22.092,
+          "end": 23.192,
+          "word": "dimíttimus",
+          "line": 3
+        },
+        {
+          "start": 23.192,
+          "end": 24.212,
+          "word": "debitóribus",
+          "line": 3
+        },
+        {
+          "start": 24.212,
+          "end": 25.302,
+          "word": "nostris.",
+          "line": 3
+        }
+      ],
+      "lines": [
+        {
+          "line": 0,
+          "start": 0.0,
+          "end": 6.288
+        },
+        {
+          "line": 1,
+          "start": 6.288,
+          "end": 8.664
+        },
+        {
+          "line": 2,
+          "start": 8.664,
+          "end": 13.752
+        },
+        {
+          "line": 3,
+          "start": 13.752,
+          "end": 25.344
+        }
+      ]
+    },
+    "1-5": {
+      "duration": 30.888,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.58,
+          "word": "Pater",
+          "line": 0
+        },
+        {
+          "start": 0.58,
+          "end": 1.38,
+          "word": "noster,",
+          "line": 0
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "word": "qui",
+          "line": 0
+        },
+        {
+          "start": 1.82,
+          "end": 2.16,
+          "word": "es",
+          "line": 0
+        },
+        {
+          "start": 2.16,
+          "end": 2.42,
+          "word": "in",
+          "line": 0
+        },
+        {
+          "start": 2.42,
+          "end": 3.2,
+          "word": "cælis,",
+          "line": 0
+        },
+        {
+          "start": 3.2,
+          "end": 4.86,
+          "word": "sanctificétur",
+          "line": 0
+        },
+        {
+          "start": 4.86,
+          "end": 5.3,
+          "word": "Nomen",
+          "line": 0
+        },
+        {
+          "start": 5.3,
+          "end": 6.25,
+          "word": "Tuum.",
+          "line": 0
+        },
+        {
+          "start": 6.288,
+          "end": 7.148,
+          "word": "Advéniat",
+          "line": 1
+        },
+        {
+          "start": 7.148,
+          "end": 7.788,
+          "word": "Regnum",
+          "line": 1
+        },
+        {
+          "start": 7.788,
+          "end": 8.638,
+          "word": "Tuum.",
+          "line": 1
+        },
+        {
+          "start": 8.664,
+          "end": 9.124,
+          "word": "Fiat",
+          "line": 2
+        },
+        {
+          "start": 9.124,
+          "end": 9.964,
+          "word": "Volúntas",
+          "line": 2
+        },
+        {
+          "start": 9.964,
+          "end": 10.424,
+          "word": "Tua,",
+          "line": 2
+        },
+        {
+          "start": 10.424,
+          "end": 11.304,
+          "word": "sicut",
+          "line": 2
+        },
+        {
+          "start": 11.304,
+          "end": 11.584,
+          "word": "in",
+          "line": 2
+        },
+        {
+          "start": 11.584,
+          "end": 12.104,
+          "word": "cælo",
+          "line": 2
+        },
+        {
+          "start": 12.104,
+          "end": 12.484,
+          "word": "et",
+          "line": 2
+        },
+        {
+          "start": 12.484,
+          "end": 12.804,
+          "word": "in",
+          "line": 2
+        },
+        {
+          "start": 12.804,
+          "end": 13.714,
+          "word": "terra.",
+          "line": 2
+        },
+        {
+          "start": 13.752,
+          "end": 14.372,
+          "word": "Panem",
+          "line": 3
+        },
+        {
+          "start": 14.372,
+          "end": 14.932,
+          "word": "nostrum",
+          "line": 3
+        },
+        {
+          "start": 14.932,
+          "end": 16.052,
+          "word": "quotidiánum",
+          "line": 3
+        },
+        {
+          "start": 16.052,
+          "end": 16.332,
+          "word": "da",
+          "line": 3
+        },
+        {
+          "start": 16.332,
+          "end": 16.972,
+          "word": "nobis",
+          "line": 3
+        },
+        {
+          "start": 16.972,
+          "end": 17.292,
+          "word": "hódie,",
+          "line": 3
+        },
+        {
+          "start": 17.292,
+          "end": 18.232,
+          "word": "et",
+          "line": 3
+        },
+        {
+          "start": 18.232,
+          "end": 18.852,
+          "word": "dimítte",
+          "line": 3
+        },
+        {
+          "start": 18.852,
+          "end": 19.472,
+          "word": "nobis",
+          "line": 3
+        },
+        {
+          "start": 19.472,
+          "end": 19.972,
+          "word": "débita",
+          "line": 3
+        },
+        {
+          "start": 19.972,
+          "end": 20.452,
+          "word": "nostra",
+          "line": 3
+        },
+        {
+          "start": 20.452,
+          "end": 21.652,
+          "word": "sicut",
+          "line": 3
+        },
+        {
+          "start": 21.652,
+          "end": 21.872,
+          "word": "et",
+          "line": 3
+        },
+        {
+          "start": 21.872,
+          "end": 22.092,
+          "word": "nos",
+          "line": 3
+        },
+        {
+          "start": 22.092,
+          "end": 23.192,
+          "word": "dimíttimus",
+          "line": 3
+        },
+        {
+          "start": 23.192,
+          "end": 24.212,
+          "word": "debitóribus",
+          "line": 3
+        },
+        {
+          "start": 24.212,
+          "end": 25.302,
+          "word": "nostris.",
+          "line": 3
+        },
+        {
+          "start": 25.344,
+          "end": 25.764,
+          "word": "Et",
+          "line": 4
+        },
+        {
+          "start": 25.764,
+          "end": 26.004,
+          "word": "ne",
+          "line": 4
+        },
+        {
+          "start": 26.004,
+          "end": 26.284,
+          "word": "nos",
+          "line": 4
+        },
+        {
+          "start": 26.284,
+          "end": 26.984,
+          "word": "indúcas",
+          "line": 4
+        },
+        {
+          "start": 26.984,
+          "end": 27.404,
+          "word": "in",
+          "line": 4
+        },
+        {
+          "start": 27.404,
+          "end": 28.584,
+          "word": "tentatiónem,",
+          "line": 4
+        },
+        {
+          "start": 28.584,
+          "end": 29.084,
+          "word": "sed",
+          "line": 4
+        },
+        {
+          "start": 29.084,
+          "end": 29.744,
+          "word": "líbera",
+          "line": 4
+        },
+        {
+          "start": 29.744,
+          "end": 29.964,
+          "word": "nos",
+          "line": 4
+        },
+        {
+          "start": 29.964,
+          "end": 30.184,
+          "word": "a",
+          "line": 4
+        },
+        {
+          "start": 30.184,
+          "end": 30.844,
+          "word": "malo.",
+          "line": 4
+        }
+      ],
+      "lines": [
+        {
+          "line": 0,
+          "start": 0.0,
+          "end": 6.288
+        },
+        {
+          "line": 1,
+          "start": 6.288,
+          "end": 8.664
+        },
+        {
+          "line": 2,
+          "start": 8.664,
+          "end": 13.752
+        },
+        {
+          "line": 3,
+          "start": 13.752,
+          "end": 25.344
+        },
+        {
+          "line": 4,
+          "start": 25.344,
+          "end": 30.888
+        }
+      ]
+    },
+    "1-6": {
+      "duration": 31.872,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.58,
+          "word": "Pater",
+          "line": 0
+        },
+        {
+          "start": 0.58,
+          "end": 1.38,
+          "word": "noster,",
+          "line": 0
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "word": "qui",
+          "line": 0
+        },
+        {
+          "start": 1.82,
+          "end": 2.16,
+          "word": "es",
+          "line": 0
+        },
+        {
+          "start": 2.16,
+          "end": 2.42,
+          "word": "in",
+          "line": 0
+        },
+        {
+          "start": 2.42,
+          "end": 3.2,
+          "word": "cælis,",
+          "line": 0
+        },
+        {
+          "start": 3.2,
+          "end": 4.86,
+          "word": "sanctificétur",
+          "line": 0
+        },
+        {
+          "start": 4.86,
+          "end": 5.3,
+          "word": "Nomen",
+          "line": 0
+        },
+        {
+          "start": 5.3,
+          "end": 6.25,
+          "word": "Tuum.",
+          "line": 0
+        },
+        {
+          "start": 6.288,
+          "end": 7.148,
+          "word": "Advéniat",
+          "line": 1
+        },
+        {
+          "start": 7.148,
+          "end": 7.788,
+          "word": "Regnum",
+          "line": 1
+        },
+        {
+          "start": 7.788,
+          "end": 8.638,
+          "word": "Tuum.",
+          "line": 1
+        },
+        {
+          "start": 8.664,
+          "end": 9.124,
+          "word": "Fiat",
+          "line": 2
+        },
+        {
+          "start": 9.124,
+          "end": 9.964,
+          "word": "Volúntas",
+          "line": 2
+        },
+        {
+          "start": 9.964,
+          "end": 10.424,
+          "word": "Tua,",
+          "line": 2
+        },
+        {
+          "start": 10.424,
+          "end": 11.304,
+          "word": "sicut",
+          "line": 2
+        },
+        {
+          "start": 11.304,
+          "end": 11.584,
+          "word": "in",
+          "line": 2
+        },
+        {
+          "start": 11.584,
+          "end": 12.104,
+          "word": "cælo",
+          "line": 2
+        },
+        {
+          "start": 12.104,
+          "end": 12.484,
+          "word": "et",
+          "line": 2
+        },
+        {
+          "start": 12.484,
+          "end": 12.804,
+          "word": "in",
+          "line": 2
+        },
+        {
+          "start": 12.804,
+          "end": 13.714,
+          "word": "terra.",
+          "line": 2
+        },
+        {
+          "start": 13.752,
+          "end": 14.372,
+          "word": "Panem",
+          "line": 3
+        },
+        {
+          "start": 14.372,
+          "end": 14.932,
+          "word": "nostrum",
+          "line": 3
+        },
+        {
+          "start": 14.932,
+          "end": 16.052,
+          "word": "quotidiánum",
+          "line": 3
+        },
+        {
+          "start": 16.052,
+          "end": 16.332,
+          "word": "da",
+          "line": 3
+        },
+        {
+          "start": 16.332,
+          "end": 16.972,
+          "word": "nobis",
+          "line": 3
+        },
+        {
+          "start": 16.972,
+          "end": 17.292,
+          "word": "hódie,",
+          "line": 3
+        },
+        {
+          "start": 17.292,
+          "end": 18.232,
+          "word": "et",
+          "line": 3
+        },
+        {
+          "start": 18.232,
+          "end": 18.852,
+          "word": "dimítte",
+          "line": 3
+        },
+        {
+          "start": 18.852,
+          "end": 19.472,
+          "word": "nobis",
+          "line": 3
+        },
+        {
+          "start": 19.472,
+          "end": 19.972,
+          "word": "débita",
+          "line": 3
+        },
+        {
+          "start": 19.972,
+          "end": 20.452,
+          "word": "nostra",
+          "line": 3
+        },
+        {
+          "start": 20.452,
+          "end": 21.652,
+          "word": "sicut",
+          "line": 3
+        },
+        {
+          "start": 21.652,
+          "end": 21.872,
+          "word": "et",
+          "line": 3
+        },
+        {
+          "start": 21.872,
+          "end": 22.092,
+          "word": "nos",
+          "line": 3
+        },
+        {
+          "start": 22.092,
+          "end": 23.192,
+          "word": "dimíttimus",
+          "line": 3
+        },
+        {
+          "start": 23.192,
+          "end": 24.212,
+          "word": "debitóribus",
+          "line": 3
+        },
+        {
+          "start": 24.212,
+          "end": 25.302,
+          "word": "nostris.",
+          "line": 3
+        },
+        {
+          "start": 25.344,
+          "end": 25.764,
+          "word": "Et",
+          "line": 4
+        },
+        {
+          "start": 25.764,
+          "end": 26.004,
+          "word": "ne",
+          "line": 4
+        },
+        {
+          "start": 26.004,
+          "end": 26.284,
+          "word": "nos",
+          "line": 4
+        },
+        {
+          "start": 26.284,
+          "end": 26.984,
+          "word": "indúcas",
+          "line": 4
+        },
+        {
+          "start": 26.984,
+          "end": 27.404,
+          "word": "in",
+          "line": 4
+        },
+        {
+          "start": 27.404,
+          "end": 28.584,
+          "word": "tentatiónem,",
+          "line": 4
+        },
+        {
+          "start": 28.584,
+          "end": 29.084,
+          "word": "sed",
+          "line": 4
+        },
+        {
+          "start": 29.084,
+          "end": 29.744,
+          "word": "líbera",
+          "line": 4
+        },
+        {
+          "start": 29.744,
+          "end": 29.964,
+          "word": "nos",
+          "line": 4
+        },
+        {
+          "start": 29.964,
+          "end": 30.184,
+          "word": "a",
+          "line": 4
+        },
+        {
+          "start": 30.184,
+          "end": 30.844,
+          "word": "malo.",
+          "line": 4
+        },
+        {
+          "start": 30.888,
+          "end": 31.838,
+          "word": "Amen.",
+          "line": 5
+        }
+      ],
+      "lines": [
+        {
+          "line": 0,
+          "start": 0.0,
+          "end": 6.288
+        },
+        {
+          "line": 1,
+          "start": 6.288,
+          "end": 8.664
+        },
+        {
+          "line": 2,
+          "start": 8.664,
+          "end": 13.752
+        },
+        {
+          "line": 3,
+          "start": 13.752,
+          "end": 25.344
+        },
+        {
+          "line": 4,
+          "start": 25.344,
+          "end": 30.888
+        },
+        {
+          "line": 5,
+          "start": 30.888,
+          "end": 31.872
+        }
+      ]
+    }
+  },
+  "tutorial": {
+    "sectionStart": 25.0,
+    "sectionEnd": 61.0,
+    "words": [
+      {
+        "start": 25.0,
+        "end": 25.72,
+        "word": "Pater",
+        "line": 0
+      },
+      {
+        "start": 25.72,
+        "end": 26.48,
+        "word": "noster,",
+        "line": 0
+      },
+      {
+        "start": 26.48,
+        "end": 26.98,
+        "word": "qui",
+        "line": 0
+      },
+      {
+        "start": 26.98,
+        "end": 27.32,
+        "word": "es",
+        "line": 0
+      },
+      {
+        "start": 27.32,
+        "end": 27.56,
+        "word": "in",
+        "line": 0
+      },
+      {
+        "start": 27.56,
+        "end": 28.3,
+        "word": "cælis,",
+        "line": 0
+      },
+      {
+        "start": 28.3,
+        "end": 30.0,
+        "word": "sanctificétur",
+        "line": 0
+      },
+      {
+        "start": 30.0,
+        "end": 30.44,
+        "word": "Nomen",
+        "line": 0
+      },
+      {
+        "start": 30.44,
+        "end": 31.2,
+        "word": "Tuum.",
+        "line": 0
+      },
+      {
+        "start": 31.2,
+        "end": 32.48,
+        "word": "Advéniat",
+        "line": 1
+      },
+      {
+        "start": 32.48,
+        "end": 33.14,
+        "word": "Regnum",
+        "line": 1
+      },
+      {
+        "start": 33.14,
+        "end": 33.84,
+        "word": "Tuum.",
+        "line": 1
+      },
+      {
+        "start": 33.84,
+        "end": 34.62,
+        "word": "Fiat",
+        "line": 2
+      },
+      {
+        "start": 34.62,
+        "end": 35.44,
+        "word": "Volúntas",
+        "line": 2
+      },
+      {
+        "start": 35.44,
+        "end": 35.9,
+        "word": "Tua,",
+        "line": 2
+      },
+      {
+        "start": 35.9,
+        "end": 36.76,
+        "word": "sicut",
+        "line": 2
+      },
+      {
+        "start": 36.76,
+        "end": 37.04,
+        "word": "in",
+        "line": 2
+      },
+      {
+        "start": 37.04,
+        "end": 37.54,
+        "word": "cælo",
+        "line": 2
+      },
+      {
+        "start": 37.54,
+        "end": 37.96,
+        "word": "et",
+        "line": 2
+      },
+      {
+        "start": 37.96,
+        "end": 38.32,
+        "word": "in",
+        "line": 2
+      },
+      {
+        "start": 38.32,
+        "end": 38.98,
+        "word": "terra.",
+        "line": 2
+      },
+      {
+        "start": 38.98,
+        "end": 40.16,
+        "word": "Panem",
+        "line": 3
+      },
+      {
+        "start": 40.16,
+        "end": 40.76,
+        "word": "nostrum",
+        "line": 3
+      },
+      {
+        "start": 40.76,
+        "end": 41.84,
+        "word": "quotidiánum",
+        "line": 3
+      },
+      {
+        "start": 41.84,
+        "end": 42.1,
+        "word": "da",
+        "line": 3
+      },
+      {
+        "start": 42.1,
+        "end": 42.76,
+        "word": "nobis",
+        "line": 3
+      },
+      {
+        "start": 42.76,
+        "end": 43.1,
+        "word": "hódie,",
+        "line": 3
+      },
+      {
+        "start": 43.1,
+        "end": 44.04,
+        "word": "et",
+        "line": 3
+      },
+      {
+        "start": 44.04,
+        "end": 44.64,
+        "word": "dimítte",
+        "line": 3
+      },
+      {
+        "start": 44.64,
+        "end": 45.26,
+        "word": "nobis",
+        "line": 3
+      },
+      {
+        "start": 45.26,
+        "end": 45.74,
+        "word": "débita",
+        "line": 3
+      },
+      {
+        "start": 45.74,
+        "end": 46.28,
+        "word": "nostra",
+        "line": 3
+      },
+      {
+        "start": 46.28,
+        "end": 47.44,
+        "word": "sicut",
+        "line": 3
+      },
+      {
+        "start": 47.44,
+        "end": 47.66,
+        "word": "et",
+        "line": 3
+      },
+      {
+        "start": 47.66,
+        "end": 47.88,
+        "word": "nos",
+        "line": 3
+      },
+      {
+        "start": 47.88,
+        "end": 48.96,
+        "word": "dimíttimus",
+        "line": 3
+      },
+      {
+        "start": 48.96,
+        "end": 49.98,
+        "word": "debitóribus",
+        "line": 3
+      },
+      {
+        "start": 49.98,
+        "end": 50.66,
+        "word": "nostris.",
+        "line": 3
+      },
+      {
+        "start": 50.66,
+        "end": 51.76,
+        "word": "Et",
+        "line": 4
+      },
+      {
+        "start": 51.76,
+        "end": 52.0,
+        "word": "ne",
+        "line": 4
+      },
+      {
+        "start": 52.0,
+        "end": 52.84,
+        "word": "nos",
+        "line": 4
+      },
+      {
+        "start": 52.84,
+        "end": 53.28,
+        "word": "indúcas",
+        "line": 4
+      },
+      {
+        "start": 53.28,
+        "end": 55.84,
+        "word": "in",
+        "line": 4
+      },
+      {
+        "start": 55.84,
+        "end": 55.89,
+        "word": "tentatiónem,",
+        "line": 4
+      },
+      {
+        "start": 55.89,
+        "end": 56.14,
+        "word": "sed",
+        "line": 4
+      },
+      {
+        "start": 56.14,
+        "end": 56.56,
+        "word": "líbera",
+        "line": 4
+      },
+      {
+        "start": 56.56,
+        "end": 56.68,
+        "word": "nos",
+        "line": 4
+      },
+      {
+        "start": 56.68,
+        "end": 56.8,
+        "word": "a",
+        "line": 4
+      },
+      {
+        "start": 56.8,
+        "end": 59.75,
+        "word": "malo.",
+        "line": 4
+      },
+      {
+        "start": 59.75,
+        "end": 61.0,
+        "word": "Amen.",
+        "line": 5
+      }
+    ]
+  },
+  "meta": {
+    "aligner": "faster-whisper base; slow s4 uses 5 speech-region phrase groups"
+  }
+}
