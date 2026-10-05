@@ -48,10 +48,23 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
 
+  // Only the app itself (./ or ./index.html) may fall back to the cached app shell.
+  // Any other page, e.g. stats.html, is always fetched live and shown as itself, never as the app.
+  const scopePath = new URL(self.registration.scope).pathname;
+  const isAppShell = url.pathname === scopePath || url.pathname === scopePath + 'index.html';
+  if (req.mode === 'navigate' && !isAppShell) {
+    event.respondWith(
+      fetch(req).catch(() => new Response('You are offline. This page needs an internet connection.', {
+        status: 503, headers: { 'Content-Type': 'text/plain; charset=utf-8' }
+      }))
+    );
+    return;
+  }
+
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
     let res = await cache.match(req, { ignoreSearch: true });
-    if (!res && req.mode === 'navigate') res = await cache.match('index.html');
+    if (!res && req.mode === 'navigate') res = await cache.match('index.html'); // app shell only (see above)
     if (res) {
       const range = req.headers.get('range');
       return range && res.status === 200 ? rangeResponse(res, range) : res;
