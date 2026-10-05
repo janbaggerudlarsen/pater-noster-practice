@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pater Noster Practice · Visits</title>
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#1f4e8c">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<style>
+  :root { --bg:#f3f7fc; --card:#fff; --ink:#1b2942; --muted:#5a6a84; --blue:#1f4e8c; --blue-2:#3a6db3; --sky:#dbe8f7; --gold:#d9a520; --line:#d3deec; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
+  main { max-width:560px; margin:0 auto; padding:20px 16px 40px; }
+  h1 { font-size:1.4rem; margin:0 0 2px; color:var(--blue); }
+  .muted { color:var(--muted); font-size:.9rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin:14px 0; }
+  .totals { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .big { font-size:2rem; font-weight:700; color:var(--blue); line-height:1.1; }
+  table { width:100%; border-collapse:collapse; font-size:.95rem; }
+  th, td { padding:6px 4px; text-align:right; border-bottom:1px solid var(--line); }
+  th:first-child, td:first-child { text-align:left; }
+  th { color:var(--muted); font-weight:600; font-size:.85rem; }
+  .bar { display:inline-block; height:8px; background:var(--gold); border-radius:4px; vertical-align:middle; margin-right:6px; }
+  button { font:inherit; border:1px solid var(--blue-2); background:var(--sky); color:var(--blue); border-radius:999px; padding:8px 14px; }
+  a { color:var(--blue-2); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pater Noster Practice: visits</h1>
+  <p class="muted">Anonymous counts for <a href="./">the app</a>. Updated live. Days are Polish time.</p>
+
+  <div class="card totals">
+    <div><div class="big" id="opens">…</div><div class="muted">app opens, all time</div></div>
+    <div><div class="big" id="devices">…</div><div class="muted">different devices, all time</div></div>
+  </div>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>Day</th><th>Visitors</th><th>Opens</th></tr></thead>
+      <tbody id="days"><tr><td colspan="3" class="muted">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <p style="margin-top:0"><strong>Your own visits</strong></p>
+    <p class="muted" id="optState"></p>
+    <button type="button" id="optBtn"></button>
+  </div>
+
+  <p class="muted">How it counts: when the app opens online it adds +1 to a few plain numbers on the free
+    <a href="https://abacus.jasoncameron.dev/" rel="noopener noreferrer">Abacus</a> counting service.
+    No cookies, no names, no IDs and no ads. Reloads within 30 minutes count once. “Different devices” is counted
+    the first time the app is opened on a phone or browser, so clearing the browser data counts it again.
+    Opens while offline are not counted.</p>
+</main>
+<script>
+(function () {
+  'use strict';
+  var BASE = 'https://abacus.jasoncameron.dev/get/jbl-pater-noster/';
+  var DAYS = 10;
+  function val(key) {
+    return fetch(BASE + key, { credentials: 'omit', cache: 'no-store', referrerPolicy: 'no-referrer' })
+      .then(function (r) { return r.ok ? r.json() : { value: 0 }; })
+      .then(function (j) { return typeof j.value === 'number' && j.value > 0 ? j.value : 0; })
+      .catch(function () { return null; });
+  }
+  function fmt(d, opts) { return new Intl.DateTimeFormat('en-GB', Object.assign({ timeZone: 'Europe/Warsaw' }, opts)).format(d); }
+  function dayKey(d) { return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Warsaw', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d).replace(/-/g, ''); }
+  function show(id, v) { document.getElementById(id).textContent = v === null ? '?' : v.toLocaleString('en-GB'); }
+
+  val('opens').then(function (v) { show('opens', v); });
+  val('devices').then(function (v) { show('devices', v); });
+
+  var days = [];
+  for (var i = 0; i < DAYS; i++) days.push(new Date(Date.now() - i * 86400000));
+  Promise.all(days.map(function (d) {
+    var k = dayKey(d);
+    return Promise.all([val('v-' + k), val('d-' + k)]).then(function (r) { return { d: d, v: r[0], o: r[1] }; });
+  })).then(function (rows) {
+    var max = Math.max.apply(null, rows.map(function (r) { return r.o || 0; }).concat([1]));
+    var tb = document.getElementById('days');
+    tb.innerHTML = '';
+    rows.forEach(function (r, i) {
+      var tr = document.createElement('tr');
+      var label = i === 0 ? 'Today' : i === 1 ? 'Yesterday' : fmt(r.d, { weekday: 'short', day: 'numeric', month: 'short' });
+      var w = Math.round(((r.o || 0) / max) * 60);
+      tr.innerHTML = '<td>' + label + '</td><td>' + (r.v === null ? '?' : r.v) + '</td><td><span class="bar" style="width:' + w + 'px"></span>' + (r.o === null ? '?' : r.o) + '</td>';
+      tb.appendChild(tr);
+    });
+  });
+
+  var btn = document.getElementById('optBtn'), st = document.getElementById('optState');
+  function out() { try { return localStorage.getItem('pn.count.optout') === '1'; } catch (e) { return false; } }
+  function render() {
+    st.textContent = out() ? 'This device is not counted.' : 'This device is counted like any visitor.';
+    btn.textContent = out() ? 'Count this device again' : 'Don’t count this device';
+  }
+  btn.addEventListener('click', function () {
+    try { out() ? localStorage.removeItem('pn.count.optout') : localStorage.setItem('pn.count.optout', '1'); } catch (e) { /* private mode */ }
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 # Pater Noster Practice (PWA)
 
 Static, offline-capable web app for practising the Latin Pater Noster. No build step, no dependencies,
-no tracking. Relative paths throughout, so it works at a domain root or a sub-path (e.g. GitHub Pages
+no cookies or trackers. Relative paths throughout, so it works at a domain root or a sub-path (e.g. GitHub Pages
 `https://<user>.github.io/pater-noster-practice/`). Needs HTTPS for the service worker (offline mode).
 
 - Text: `sentences.js` (verbatim from `../pater-noster/sentences.md`, the on-screen text of the
@@ -21,3 +21,11 @@ Then open https://<user>.github.io/pater-noster-practice/ after a minute or two.
 ## Local preview
 
     node ../pater-noster-server/serve.js /workspace/catholicism/pater-noster-app 8766
+
+## Visit counter
+
+`counter.js` adds +1 to plain numbers on the free Abacus API (https://abacus.jasoncameron.dev), namespace
+`jbl-pater-noster`: `opens` (app opens, reloads within 30 min count once), `devices` (first open on a device),
+`d-YYYYMMDD` (opens per day, Europe/Warsaw) and `v-YYYYMMDD` (visitors per day). No cookies, IDs or referrer
+are sent; it only runs on janbaggerudlarsen.github.io. View the numbers at `stats.html`, which also has a
+"Don't count this device" switch.

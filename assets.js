@@ -1,10 +1,11 @@
 // Shared by the page and the service worker. Bump APP_VERSION to refresh the offline cache.
-self.APP_VERSION = '1.1.0';
+self.APP_VERSION = '1.2.0';
 self.ASSETS = [
   './',
   'index.html',
   'app.css',
   'app.js',
+  'counter.js',
   'sentences.js',
   'assets.js',
   'timings.json',
