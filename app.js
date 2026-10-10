@@ -4,7 +4,7 @@
 
   const N = SENTENCES.length;
   // Lengths (s) of the normal-speed sentence clips; used to follow along inside the build-up tracks.
-  const NORMAL_DUR = [6.288, 2.376, 5.088, 11.592, 5.544, 0.984];
+  const NORMAL_DUR = [3.37, 2.769, 2.377, 1.933, 2.769, 3.892, 2.717, 4.101, 3.239, 2.09, 0.993];
 
   const $ = (sel, root) => (root || document).querySelector(sel);
   const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
@@ -16,6 +16,29 @@
     get(k, d) { try { const v = localStorage.getItem('pn.' + k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
     set(k, v) { try { localStorage.setItem('pn.' + k, JSON.stringify(v)); } catch (e) { /* private mode */ } }
   };
+
+  // v2.0 split the prayer from 6 lines into 11. Move saved per-line progress across once.
+  // Old line k became these new lines:
+  const OLD6_TO_NEW = [[0, 1], [2], [3, 4], [5, 6, 7], [8, 9], [10]];
+  (function migrateLayout() {
+    if (store.get('layout', 1) >= 2) return;
+    const hasOld = ['known', 'buildMax', 'buildStep', 'loopFrom', 'loopTo'].some((k) => store.get(k, null) !== null);
+    if (hasOld) {
+      const ok = (v) => Number.isInteger(v) && v >= 0 && v < 6;
+      const first = (k) => OLD6_TO_NEW[k][0];
+      const last = (k) => OLD6_TO_NEW[k][OLD6_TO_NEW[k].length - 1];
+      const known = store.get('known', []);
+      store.set('known', Array.isArray(known) ? [].concat(...known.filter(ok).map((k) => OLD6_TO_NEW[k])).sort((a, b) => a - b) : []);
+      const bm = store.get('buildMax', 0);
+      store.set('buildMax', Number.isInteger(bm) && bm >= 1 && bm <= 6 ? last(bm - 1) + 1 : 0);
+      const bs = store.get('buildStep', 1);
+      store.set('buildStep', Number.isInteger(bs) && bs >= 1 && bs <= 6 ? first(bs - 1) + 1 : 1);
+      const lf = store.get('loopFrom', 0), lt = store.get('loopTo', 1);
+      store.set('loopFrom', ok(lf) ? first(lf) : 0);
+      store.set('loopTo', ok(lt) ? last(lt) : 1);
+    }
+    store.set('layout', 2);
+  })();
 
   const S = {
     speed: store.get('speed', 'normal'),
@@ -31,6 +54,10 @@
     known: store.get('known', []),
     showEnglish: store.get('showEnglish', true)
   };
+  const clampI = (v, lo, hi, d) => (Number.isInteger(v) && v >= lo && v <= hi ? v : d);
+  S.loopFrom = clampI(S.loopFrom, 0, N - 1, 0); S.loopTo = clampI(S.loopTo, S.loopFrom, N - 1, S.loopFrom);
+  S.buildStep = clampI(S.buildStep, 1, N, 1); S.buildMax = clampI(S.buildMax, 0, N, 0);
+  S.known = Array.isArray(S.known) ? S.known.filter((i) => Number.isInteger(i) && i >= 0 && i < N) : [];
   const save = (k) => store.set(k, S[k]);
 
   let TIMINGS = null;

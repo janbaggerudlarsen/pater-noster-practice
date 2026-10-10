@@ -6,6 +6,7 @@ no cookies or trackers. Relative paths throughout, so it works at a domain root 
 
 - Text: `sentences.js` (verbatim from `../pater-noster/sentences.md`, the on-screen text of the
   Cor Fidelis tutorial, https://youtu.be/vrWrFdjPp5g).
+- Lines: 11 (v2.0, split at each petition and sentence end). Cut points and word timings: `../pn-split/make.py`.
 - Audio: 96 kbps mono re-encodes of `../pater-noster/` (originals untouched).
 - Offline: `sw.js` precaches everything listed in `assets.js`; bump `APP_VERSION` there after changes.
 
